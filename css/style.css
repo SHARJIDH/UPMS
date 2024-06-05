@@ -10304,6 +10304,10 @@ img.img-fluid.mt-1[src="img/logo.jpg"] {
     width: auto;
     max-width: none;
   }
+  .bg-secondary .navbar-brand .text-white {
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
 }
 
 @media (min-width: 992px) {
