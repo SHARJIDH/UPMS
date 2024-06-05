@@ -10279,14 +10279,14 @@ a.text-dark:focus {
   padding: 0;
   list-style-type: none;
 }
-.smaller-logo {
-  height: 50px;
+/* .smaller-logo {
+  height: 30px;
   width: auto;
-}
-.navbar-brand .img-fluid.mt-1 {
+} */
+/* .navbar-brand .img-fluid.mt-1 {
   height: 100px;
   width: auto;
-}
+} */
 img.img-fluid.mt-1[src="img/logo.jpg"] {
   height: 100px;
   width: auto;
@@ -10299,13 +10299,10 @@ img.img-fluid.mt-1[src="img/logo.jpg"] {
   .navbar-brand .text-primary {
     font-size: 3vw;
   }
-  .smaller-logo {
+  img.img-fluid.mt-1[src="img/logo.jpg"] {
     height: 30px;
     width: auto;
-  }
-  .navbar-brand .img-fluid.mt-1 {
-    height: 30px;
-    width: auto;
+    max-width: none;
   }
 }
 
