@@ -10297,7 +10297,7 @@ img.img-fluid.mt-1[src="img/logo.jpg"] {
 }
 @media (max-width: 740px) {
   .navbar-brand .text-primary {
-    font-size: 1em;
+    font-size: 0.5em;
   }
 }
 
