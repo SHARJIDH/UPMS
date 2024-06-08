@@ -10316,7 +10316,7 @@ img.img-fluid.mt-1[src="img/logo.jpg"] {
   }
 }
 .modal-dialog {
-  max-width: 400px; /* Increase this value to make the modal wider */
+  max-width: 800px; /* Increase this value to make the modal wider */
   margin: 0 auto; /* Center the modal horizontally */
   height: auto; /* Allow the modal to grow in height */
   display: flex;
@@ -10365,10 +10365,10 @@ img.img-fluid.mt-1[src="img/logo.jpg"] {
 }
 
 .custom-select {
-  font-size: 1.8rem; /* Increase the font size of the select */
+  font-size: 1.5rem; /* Increase the font size of the select */
   padding: 1rem; /* Increase the padding of the select */
-  height: 40px; /* Increase the height of the select */
-  margin-top: 1.2rem;
+  height: 60px; /* Increase the height of the select */
+  /* margin-top: 1rem; */
 }
 
 .btn2 {
