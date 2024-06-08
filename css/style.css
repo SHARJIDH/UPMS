@@ -10316,13 +10316,13 @@ img.img-fluid.mt-1[src="img/logo.jpg"] {
   }
 }
 .modal-dialog {
-  max-width: 800px; /* Increase this value to make the modal wider */
+  max-width: 400px; /* Increase this value to make the modal wider */
   margin: 0 auto; /* Center the modal horizontally */
   height: auto; /* Allow the modal to grow in height */
   display: flex;
   align-items: center; /* Center the modal vertically */
   justify-content: center; /* Center the modal horizontally */
-  min-height: 100vh; /* Ensure the modal takes up at least the full height of the viewport */
+  min-height: 70vh; /* Ensure the modal takes up at least the full height of the viewport */
 }
 
 .modal-content {
