@@ -10358,16 +10358,16 @@ img.img-fluid.mt-1[src="img/logo.jpg"] {
 }
 
 .form-control {
-  font-size: 1.8rem; /* Increase the font size of the input text */
+  font-size: 1rem; /* Increase the font size of the input text */
   padding: 1.5rem; /* Increase the padding of the input text */
-  height: 40px;
+  height: 30px;
   margin-top: 1.5rem;
 }
 
 .custom-select {
-  font-size: 1.5rem; /* Increase the font size of the select */
+  font-size: 1rem; /* Increase the font size of the select */
   padding: 1rem; /* Increase the padding of the select */
-  height: 60px; /* Increase the height of the select */
+  height: 50px; /* Increase the height of the select */
   /* margin-top: 1rem; */
 }
 
