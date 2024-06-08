@@ -10322,7 +10322,7 @@ img.img-fluid.mt-1[src="img/logo.jpg"] {
   display: flex;
   align-items: center; /* Center the modal vertically */
   justify-content: center; /* Center the modal horizontally */
-  min-height: 70vh; /* Ensure the modal takes up at least the full height of the viewport */
+  min-height: 50vh; /* Ensure the modal takes up at least the full height of the viewport */
 }
 
 .modal-content {
@@ -10360,14 +10360,14 @@ img.img-fluid.mt-1[src="img/logo.jpg"] {
 .form-control {
   font-size: 1.8rem; /* Increase the font size of the input text */
   padding: 1.5rem; /* Increase the padding of the input text */
-  height: 70px;
+  height: 40px;
   margin-top: 1.5rem;
 }
 
 .custom-select {
   font-size: 1.8rem; /* Increase the font size of the select */
   padding: 1rem; /* Increase the padding of the select */
-  height: 70px; /* Increase the height of the select */
+  height: 40px; /* Increase the height of the select */
   margin-top: 1.2rem;
 }
 
@@ -10375,7 +10375,7 @@ img.img-fluid.mt-1[src="img/logo.jpg"] {
   font-size: 1.5rem; /* Increase the font size of the button */
   padding: 1.8rem;
   border-radius: 2%;
-  height: 80px;
+  height: 50px;
   margin-top: 1.5rem;
 }
 .smallest-logo {
