@@ -10378,3 +10378,7 @@ img.img-fluid.mt-1[src="img/logo.jpg"] {
   height: 80px;
   margin-top: 1.5rem;
 }
+.smallest-logo {
+  height: 5rem;
+  width: 5rem;
+}
