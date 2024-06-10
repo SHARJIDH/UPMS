@@ -45,8 +45,8 @@
                 <div class="navbar-nav font-weight-bold mx-auto py-0">
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">About</a>
-                        <div class="dropdown-menu">
+                        <a href="#" id="navbarDropdown" class="nav-link dropdown-toggle active">About</a>
+                        <div class="dropdown-menu" id="navbarDropdownMenu">
                             <a href="about.html" class="dropdown-item">About Us</a>
                             <a href="directors-message.html" class="dropdown-item">Director's Message</a>
                             <a href="managers-message.html" class="dropdown-item">Manager's Message</a>
@@ -56,8 +56,8 @@
                     <!-- <a href="team.html" class="nav-item nav-link">Teachers</a> -->
                     <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu rounded-0 m-0">
+                        <a href="#" id="navbarDropdownPages" class="nav-link dropdown-toggle">Pages</a>
+                        <div class="dropdown-menu rounded-0 m-0" id="navbarDropdownPagesMenu">
                             <a href="blog.html" class="dropdown-item">Blog Grid</a>
                             <a href="single.html" class="dropdown-item">Blog Detail</a>
                         </div>
@@ -90,7 +90,7 @@
             <img class="img-fluid rounded mb-4 mb-lg-0" src="img/director.jpg" alt="Director's Image">
         </div>
         <div class="col-lg-6">
-            <h2 class="mb-4">Director's Message</h2>
+            <h2 class="mb-4">Director's Message <br/>Mr. Chandra Prakash Singh</h2>
             <p class="mb-4">Welcome! As the director, I'm excited to share some thoughts. Students, you're at the heart of our institution. Embrace learning, challenge yourselves, and strive for excellence. Remember, education goes beyond textbooks—it's about self-discovery and empowerment. Stay curious, adaptable, and passionate about lifelong learning.</p>
             <p>To parents, thank you for trusting us with your child's education. Your support is crucial. Let's work together to create a nurturing environment where students can thrive academically, socially, and emotionally. Your involvement is key to our success.</p>
             <p>Let's embark on this journey together, nurturing future leaders and innovators. With collaboration and dedication, we can empower our students to make a difference in the world.</p>
@@ -247,7 +247,52 @@
     <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+     <script src="js/main.js"></script>
+    <script>
+        // JavaScript to handle dropdown on click
+        document.getElementById('navbarDropdown').addEventListener('click', function () {
+            var menu = document.getElementById('navbarDropdownMenu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        });
+    
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.nav-link.dropdown-toggle')) {
+                var dropdowns = document.getElementsByClassName('dropdown-menu');
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === 'block') {
+                        openDropdown.style.display = 'none';
+                    }
+                }
+            }
+        }
+        document.getElementById('navbarDropdownPages').addEventListener('click', function () {
+        var menu = document.getElementById('navbarDropdownPagesMenu');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.nav-link.dropdown-toggle')) {
+            var dropdowns = document.getElementsByClassName('dropdown-menu');
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === 'block') {
+                    openDropdown.style.display = 'none';
+                }
+            }
+        }
+    }
+    </script>
 </body>
 
 </html>

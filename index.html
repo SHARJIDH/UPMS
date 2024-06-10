@@ -45,19 +45,19 @@
                 <div class="navbar-nav font-weight-bold mx-auto py-0">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <div class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
-    <div class="dropdown-menu">
-        <a href="about.html" class="dropdown-item">About Us</a>
-        <a href="directors-message.html" class="dropdown-item">Director's Message</a>
-        <a href="managers-message.html" class="dropdown-item">Manager's Message</a>
-    </div>
-</div>
+                        <a href="#" id="navbarDropdown" class="nav-link dropdown-toggle">About</a>
+                        <div class="dropdown-menu" id="navbarDropdownMenu">
+                            <a href="about.html" class="dropdown-item">About Us</a>
+                            <a href="directors-message.html" class="dropdown-item">Director's Message</a>
+                            <a href="managers-message.html" class="dropdown-item">Manager's Message</a>
+                        </div>
+                    </div>
                     <a href="class.html" class="nav-item nav-link">Classes</a>
                     <!-- <a href="team.html" class="nav-item nav-link">Teachers</a> -->
                     <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu rounded-0 m-0">
+                        <a href="#" id="navbarDropdownPages" class="nav-link dropdown-toggle">Pages</a>
+                        <div class="dropdown-menu rounded-0 m-0" id="navbarDropdownPagesMenu">
                             <a href="blog.html" class="dropdown-item">Blog Grid</a>
                             <a href="single.html" class="dropdown-item">Blog Detail</a>
                         </div>
@@ -686,6 +686,51 @@
     <!-- Template Javascript -->
 
     <script src="js/main.js"></script>
+    <script>
+        // JavaScript to handle dropdown on click
+        document.getElementById('navbarDropdown').addEventListener('click', function () {
+            var menu = document.getElementById('navbarDropdownMenu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        });
+    
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.nav-link.dropdown-toggle')) {
+                var dropdowns = document.getElementsByClassName('dropdown-menu');
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === 'block') {
+                        openDropdown.style.display = 'none';
+                    }
+                }
+            }
+        }
+        document.getElementById('navbarDropdownPages').addEventListener('click', function () {
+        var menu = document.getElementById('navbarDropdownPagesMenu');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.nav-link.dropdown-toggle')) {
+            var dropdowns = document.getElementsByClassName('dropdown-menu');
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === 'block') {
+                    openDropdown.style.display = 'none';
+                }
+            }
+        }
+    }
+    </script>
 </body>
 
 </html>
